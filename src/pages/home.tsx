@@ -6,7 +6,7 @@ import {
   Zap,
 } from "lucide-react";
 
-import { Hero } from "../components/landing/Hero";
+import { Hero } from "../components/landing/hero";
 import { ProductCard } from "../components/landing/productCard";
 
 export function Home() {
