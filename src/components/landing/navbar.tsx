@@ -1,6 +1,6 @@
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
