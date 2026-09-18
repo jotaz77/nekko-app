@@ -31,7 +31,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg">
-            A NEKKO cria sistemas modernos para organizar,
+            O NEKKO cria sistemas modernos para organizar,
             automatizar e fazer seu negócio crescer sem
             complicação.
           </p>
