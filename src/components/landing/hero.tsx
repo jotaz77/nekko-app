@@ -38,7 +38,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button>
-              Conhecer a NEKKO
+              Conhecer o NEKKO
               <ArrowRight size={17} />
             </Button>
 
