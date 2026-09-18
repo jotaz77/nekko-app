@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 import { Hero } from "../components/landing/hero";
-import { ProductCard } from "../components/landing/productCard";
+import { ProductCard } from "../components/landing/productcard";
 
 export function Home() {
   return (
