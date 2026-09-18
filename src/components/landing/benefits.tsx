@@ -77,7 +77,7 @@ export function Benefits() {
             </h2>
 
             <p className="mt-6 text-base leading-8 text-zinc-400 md:text-lg">
-              A NEKKO foi criada para ajudar empresas e profissionais a
+              O NEKKO foi criada para ajudar empresas e profissionais a
               trabalharem de forma mais inteligente, organizada e profissional.
             </p>
 
