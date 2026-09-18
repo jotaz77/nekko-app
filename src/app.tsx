@@ -1,5 +1,5 @@
-import { MainLayout } from "./layouts/MainLayout";
-import { Home } from "./pages/Home";
+import { MainLayout } from "./layouts/mainlayout";
+import { Home } from "./pages/home";
 
 export default function App() {
   return (
