@@ -67,7 +67,7 @@ export function Benefits() {
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div className="max-w-xl">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
-              Por que escolher a NEKKO?
+              Por que escolher o NEKKO?
             </span>
 
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-white md:text-5xl">
