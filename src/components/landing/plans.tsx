@@ -59,7 +59,7 @@ const plans = [
     plans: [
       {
         name: "Essencial",
-        price: "A definir",
+        price: "29,90",
         description: "Estrutura inicial para organizar sua rotina profissional.",
         features: [
           "Agenda online",
@@ -72,7 +72,7 @@ const plans = [
       },
       {
         name: "Profissional",
-        price: "A definir",
+        price: "49,90",
         description: "Mais recursos para profissionais em crescimento.",
         features: [
           "Agenda online",
