@@ -9,7 +9,7 @@ const plans = [
     plans: [
       {
         name: "Baixa Demanda",
-        price: "39,90",
+        price: "29,90",
         description: "Para operações com menor volume de ordens de serviço.",
         features: [
           "Até 10 OS por semana",
@@ -22,7 +22,7 @@ const plans = [
       },
       {
         name: "Média Demanda",
-        price: "54,90",
+        price: "49,90",
         description: "Para empresas que já possuem uma rotina maior de atendimento.",
         features: [
           "Até 30 OS por semana",
