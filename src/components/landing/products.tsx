@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import {
   ArrowRight,
   BarChart3,
@@ -18,7 +20,7 @@ type ProductCardProps = {
   name: string;
   description: string;
   features: string[];
-  icon: React.ReactNode;
+  icon: ReactNode;
   color: "green" | "pink";
   href: string;
 };
