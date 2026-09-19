@@ -147,7 +147,7 @@ export function Products() {
             name="NEKKO OS"
             description="Gestão completa para assistências técnicas, lojas de manutenção e empresas que trabalham com uma ou várias filiais."
             color="green"
-            href="/nekko-os"
+            href="#planos"
             icon={<Store size={27} />}
             features={[
               "Ordens de serviço",
@@ -163,7 +163,7 @@ export function Products() {
             name="NEKKO BEAUTY"
             description="Agenda e gestão inteligente para profissionais da beleza que querem organizar seus horários e cuidar melhor do próprio negócio."
             color="pink"
-            href="/nekko-beauty"
+            href="#planos"
             icon={<Sparkles size={27} />}
             features={[
               "Agenda online",
