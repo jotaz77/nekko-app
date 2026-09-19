@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Check } from "lucide-react";
 
 const plans = [
@@ -9,7 +10,7 @@ const plans = [
     plans: [
       {
         name: "Baixa Demanda",
-        price: "29,90",
+        monthlyPrice: 29.9,
         description: "Para operações com menor volume de ordens de serviço.",
         features: [
           "Até 10 OS por semana",
@@ -22,8 +23,9 @@ const plans = [
       },
       {
         name: "Média Demanda",
-        price: "49,90",
-        description: "Para empresas que já possuem uma rotina maior de atendimento.",
+        monthlyPrice: 49.9,
+        description:
+          "Para empresas que já possuem uma rotina maior de atendimento.",
         features: [
           "Até 20 OS por semana",
           "Ordens de serviço",
@@ -35,7 +37,7 @@ const plans = [
       },
       {
         name: "Alta Demanda",
-        price: "99,90",
+        monthlyPrice: 99.9,
         description: "Para operações com alto volume de ordens de serviço.",
         features: [
           "OS ILIMITADAS",
@@ -59,8 +61,9 @@ const plans = [
     plans: [
       {
         name: "Essencial",
-        price: "29,90",
-        description: "Estrutura inicial para organizar sua rotina profissional.",
+        monthlyPrice: 29.9,
+        description:
+          "Estrutura inicial para organizar sua rotina profissional.",
         features: [
           "Agenda online",
           "Agendamento de clientes",
@@ -72,7 +75,7 @@ const plans = [
       },
       {
         name: "Profissional",
-        price: "49,90",
+        monthlyPrice: 49.9,
         description: "Mais recursos para profissionais em crescimento.",
         features: [
           "Agenda online",
@@ -88,20 +91,29 @@ const plans = [
   },
 ];
 
+function formatPrice(value: number) {
+  return value.toFixed(2).replace(".", ",");
+}
+
 function PlanCard({
   plan,
   color,
+  annual,
 }: {
   plan: {
     name: string;
-    price: string;
+    monthlyPrice: number;
     description: string;
     features: string[];
     featured?: boolean;
   };
   color: "green" | "pink";
+  annual: boolean;
 }) {
   const isGreen = color === "green";
+
+  const annualPrice = plan.monthlyPrice * 9;
+  const equivalentMonthlyPrice = annualPrice / 12;
 
   return (
     <article
@@ -125,6 +137,18 @@ function PlanCard({
         </span>
       )}
 
+      {annual && (
+        <span
+          className={`absolute -top-3 right-6 rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] ${
+            isGreen
+              ? "bg-emerald-400/15 text-emerald-300"
+              : "bg-pink-300/15 text-pink-200"
+          }`}
+        >
+          3 meses grátis
+        </span>
+      )}
+
       <h4 className="text-xl font-semibold text-white">{plan.name}</h4>
 
       <p className="mt-3 min-h-[56px] text-sm leading-6 text-zinc-400">
@@ -135,13 +159,19 @@ function PlanCard({
         <span className="text-sm text-zinc-500">R$</span>
 
         <span className="ml-1 text-4xl font-semibold tracking-tight text-white">
-          {plan.price}
+          {formatPrice(annual ? annualPrice : plan.monthlyPrice)}
         </span>
 
-        {plan.price !== "A definir" && (
-          <span className="ml-2 text-sm text-zinc-500">/mês</span>
-        )}
+        <span className="ml-2 text-sm text-zinc-500">
+          {annual ? "/ano" : "/mês"}
+        </span>
       </div>
+
+      {annual && (
+        <p className="mt-2 text-xs text-zinc-500">
+          Equivale a R$ {formatPrice(equivalentMonthlyPrice)}/mês
+        </p>
+      )}
 
       <div className="my-6 h-px bg-white/10" />
 
@@ -181,6 +211,8 @@ function PlanCard({
 }
 
 export function Plans() {
+  const [annual, setAnnual] = useState(false);
+
   return (
     <section id="planos" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -197,6 +229,35 @@ export function Plans() {
             Planos pensados para acompanhar o tamanho da sua operação,
             mantendo sua gestão simples, organizada e profissional.
           </p>
+
+          <div className="mt-10 inline-flex rounded-2xl border border-white/10 bg-white/[0.03] p-1.5">
+            <button
+              type="button"
+              onClick={() => setAnnual(false)}
+              className={`rounded-xl px-6 py-3 text-sm font-medium transition ${
+                !annual
+                  ? "bg-white text-zinc-950"
+                  : "text-zinc-400 hover:text-white"
+              }`}
+            >
+              Mensal
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setAnnual(true)}
+              className={`relative rounded-xl px-6 py-3 text-sm font-medium transition ${
+                annual
+                  ? "bg-white text-zinc-950"
+                  : "text-zinc-400 hover:text-white"
+              }`}
+            >
+              Anual
+              <span className="ml-2 text-[10px] font-semibold uppercase tracking-wide text-emerald-400">
+                3 meses grátis
+              </span>
+            </button>
+          </div>
         </div>
 
         <div className="mt-16 space-y-16">
@@ -230,6 +291,7 @@ export function Plans() {
                     key={plan.name}
                     plan={plan}
                     color={product.color as "green" | "pink"}
+                    annual={annual}
                   />
                 ))}
               </div>
