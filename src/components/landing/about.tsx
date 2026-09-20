@@ -36,7 +36,7 @@ export function About() {
         <div className="grid gap-14 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
-              Sobre a NEKKO
+              Sobre a NEKKO SYSTEMS
             </span>
 
             <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white md:text-5xl">
@@ -44,7 +44,7 @@ export function About() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-400 md:text-lg">
-              A NEKKO APP é uma empresa de tecnologia que cria sistemas
+              A NEKKO SYSTEMS é uma empresa de tecnologia que cria sistemas
               especializados para diferentes tipos de negócio.
             </p>
 
