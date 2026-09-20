@@ -37,12 +37,21 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button>
+            <Button
+              onClick={() => {
+                window.location.href = "#sobre";
+              }}
+            >
               Conhecer o NEKKO
               <ArrowRight size={17} />
             </Button>
-
-            <Button variant="secondary">
+            
+            <Button
+              variant="secondary"
+              onClick={() => {
+                window.location.href = "#produtos";
+              }}
+            >
               Conhecer os produtos
             </Button>
           </div>
