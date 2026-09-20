@@ -1,3 +1,4 @@
+import { About } from "../components/landing/about";
 import { Benefits } from "../components/landing/benefits";
 import { FAQ } from "../components/landing/faq";
 import { Footer } from "../components/landing/footer";
