@@ -75,7 +75,7 @@ export function Hero() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs text-neutral-500">
-                    NEKKO APP
+                    NEKKO SYSTEMS
                   </p>
 
                   <h2 className="mt-1 text-xl font-bold">
