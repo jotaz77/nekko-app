@@ -73,7 +73,7 @@ export function About() {
                     </p>
 
                     <h3 className="mt-3 text-2xl font-semibold text-white">
-                      NEKKO APP
+                      NEKKO SYSTEMS
                     </h3>
                   </div>
 
