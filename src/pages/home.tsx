@@ -1,5 +1,6 @@
 import { Benefits } from "../components/landing/benefits";
 import { FAQ } from "../components/landing/faq";
+import { Footer } from "../components/landing/footer";
 import { Hero } from "../components/landing/hero";
 import { Products } from "../components/landing/products";
 import { Plans } from "../components/landing/plans";
