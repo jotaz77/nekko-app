@@ -3,9 +3,9 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "O que é a NEKKO APP?",
+    question: "O que é a NEKKO SYSTEMS?",
     answer:
-      "A NEKKO APP é uma empresa de tecnologia que desenvolve sistemas para ajudar diferentes tipos de negócio a organizar sua gestão, seus clientes e sua rotina.",
+      "A NEKKO SYSTEMS é uma empresa de tecnologia que desenvolve sistemas para ajudar diferentes tipos de negócio a organizar sua gestão, seus clientes e sua rotina.",
   },
   {
     question: "Qual a diferença entre o NEKKO OS e o NEKKO BEAUTY?",
@@ -40,7 +40,7 @@ const faqs = [
   {
     question: "Como faço para começar?",
     answer:
-      "Escolha o produto e o plano que melhor se encaixam no seu negócio, selecione a periodicidade e siga o processo de contratação. Em breve, todo esse fluxo estará disponível diretamente pela NEKKO APP.",
+      "Escolha o produto e o plano que melhor se encaixam no seu negócio, selecione a periodicidade e siga o processo de contratação. Em breve, todo esse fluxo estará disponível diretamente pela NEKKO SYSTEMS.",
   },
 ];
 
@@ -101,7 +101,7 @@ export function FAQ() {
           </h2>
 
           <p className="mt-6 text-base leading-8 text-zinc-400 md:text-lg">
-            Encontre respostas para as principais dúvidas sobre a NEKKO APP,
+            Encontre respostas para as principais dúvidas sobre a NEKKO SYSTEMS,
             nossos sistemas e nossos planos.
           </p>
         </div>
