@@ -12,6 +12,7 @@ export function Home() {
       <Hero />
       <Products />
       <Benefits />
+      <About />
       <Plans />
       <FAQ />
       <Footer />
