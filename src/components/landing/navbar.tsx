@@ -27,7 +27,7 @@ export function Navbar() {
                 </p>
 
                 <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">
-                  App
+                  Systems
                 </p>
               </div>
             </a>
