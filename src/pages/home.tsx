@@ -11,6 +11,7 @@ export function Home() {
       <Products />
       <Benefits />
       <Plans />
+      <FAQ />
     </main>
   );
 }
