@@ -13,6 +13,7 @@ export function Home() {
       <Benefits />
       <Plans />
       <FAQ />
+      <Footer />
     </main>
   );
 }
