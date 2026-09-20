@@ -22,11 +22,11 @@ export function Footer() {
             <a
               href="#inicio"
               className="inline-flex items-center"
-              aria-label="NEKKO APP - Início"
+              aria-label="NEKKO SYSTEMS - Início"
             >
               <img
                 src="/logo.svg"
-                alt="NEKKO APP"
+                alt="NEKKO SYSTEMS"
                 className="h-9 w-auto"
               />
             </a>
